@@ -85,8 +85,8 @@ public class CalculatorTest {
 
 
     private void setArguments(int argument1, int argument2) {
-        this.argument1 = argument1;
-        this.argument2 = argument2;
+        this.argument1 = Math.abs(argument1);
+        this.argument2 = Math.abs(argument2);
     }
 
     private void whenCommandIs(Command command) {
