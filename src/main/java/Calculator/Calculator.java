@@ -16,13 +16,11 @@ public class Calculator {
 
     public int calculate(Command command, int argument1, int argument2) {
 
-        int argAbs1 = Math.abs(argument1);
-        int argAbs2 = Math.abs(argument2);
 
         switch (command) {
-            case COMMAND_SUM: return sum(argAbs1, argAbs2);
+            case COMMAND_SUM: return sum(argument1, argument2);
 
-            case COMMAND_DIV: return div(argAbs1, argAbs2);
+            case COMMAND_DIV: return div(argument1, argument2);
 
 
             default: return 0;
